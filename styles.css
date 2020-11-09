@@ -1,3 +1,16 @@
 body {
-  background: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta-af {
+  position: relative;
+}
+
+.meta-af img:last-of-type {
+  position: absolute;
+  left: 0;
+  top: 50%;
 }
