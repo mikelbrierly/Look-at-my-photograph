@@ -5,7 +5,7 @@
     <title>Every time it makes me laugh</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,900&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </head>
 
   <body>
@@ -15,9 +15,14 @@
         <section>
           <img src="https://tonedeaf.thebrag.com/wp-content/uploads/2020/09/Nickelback-Photograph-970x500-1.jpg" width="750px" alt="A bleached blonde man saying 'look at this photograph' while holding up said photo for you to look at.">
           <div class="framed-picture">
-            <img src="https://i.ytimg.com/vi/N_j5tDuakKU/maxresdefault.jpg" alt="In the photo being held up by the blonde man, Nicolas Cage is a perturbed cat">
+            <img class="small-picture" src="https://i.ytimg.com/vi/N_j5tDuakKU/maxresdefault.jpg" alt="In the photo being held up by the blonde man, the Big Gulp scene from Dumb and Dumber is shown">
           </div>
         </section>
+        <div class="update-url">
+          <label for="input"> Image URL</label>
+          <input id="urlInput" type="text">
+          <button class="update-button">update</button>
+        </div>
       </div>
     </main>
     <footer><a href="https://stackblitz.com/edit/web-platform-guuyjq?file=index.html">edit me</a></footer>
