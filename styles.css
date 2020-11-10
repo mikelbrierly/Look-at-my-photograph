@@ -3,14 +3,49 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Roboto, Arial, sans-serif;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+main {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 70px;
+  width: 100%;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -3px;
+  padding-bottom: 30px;
+  padding-left: 150px;
+  border-bottom: 2px dashed white;
+  color: rgb(5, 72, 88);
 }
 
 .meta-af {
   position: relative;
 }
 
-.meta-af img:last-of-type {
+.meta-af .pic-in-pic {
   position: absolute;
-  left: 0;
-  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 93px;
+  top: 207px;
+  width: 210px;
+  height: 144px;
+  transform: rotate(-15.5deg);
+  background-color: black;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.meta-af .pic-in-pic img {
+  height: 100%;
 }
