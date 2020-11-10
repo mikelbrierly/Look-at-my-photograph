@@ -1,14 +1,22 @@
+body.preload * {
+  transition: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Roboto, Arial, sans-serif;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  margin: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  background-image: linear-gradient(45deg, #88d3ce 0%, #6e45e2 100%);
 }
 
 main {
-  width: 900px;
+  max-width: 800px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,35 +25,108 @@ main {
 
 h1 {
   font-size: 70px;
-  width: 100%;
   font-weight: 900;
-  font-style: italic;
   letter-spacing: -3px;
   padding-bottom: 30px;
-  padding-left: 150px;
   border-bottom: 2px dashed white;
-  color: rgb(5, 72, 88);
+  color: white;
 }
 
-.meta-af {
+h1 span {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.card {
+  background-color: white;
+  padding: 2%;
+  padding-bottom: 10%;
+  border-radius: 1%;
+  transform: rotate(-.8deg);
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.5)
+}
+
+.card:hover {
+  transform: rotate(0);
+  box-shadow: 0px 10px 17px 3px rgba(0,0,0,0.5)
+}
+
+section {
   position: relative;
+  background: rgb(29, 29, 29);
+  padding-top: 15%;
+  padding-bottom: 15%;
+  border-radius: 4px;
 }
 
-.meta-af .pic-in-pic {
+section img:first-of-type {
+  max-width: 600px;
+  width: 80vw;
+  height: auto;
+}
+
+section .framed-picture {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 93px;
-  top: 207px;
-  width: 210px;
-  height: 144px;
-  transform: rotate(-15.5deg);
-  background-color: black;
+  right: 12%;
+  top: 52%;
+  width: 28%;
+  height: 25%;
+  transform: rotate(-15.6deg);
+  background-color: rgba(61, 61, 61, 0.829);
   overflow: hidden;
   border-radius: 4px;
 }
 
-.meta-af .pic-in-pic img {
-  height: 100%;
+section .framed-picture img {
+  width: 100%;
+}
+
+footer {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+footer a {
+  transition: all .1s ease-in-out;
+  color: black;
+  font-style: italic;
+}
+
+footer a:hover, footer a:visited:hover {
+  color: white;
+}
+
+footer a:visited:hover {
+  color: white;
+}
+
+footer a:active {
+  color: black;
+}
+
+@media (max-width: 500px) {
+
+h1 {
+  font-size: 45px;
+  letter-spacing: -2px;
+  margin-bottom: 90px;
+}
+
+.card {
+  transform: rotate(0);
+}
+
+.card:hover {
+  box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.5)
+}
+
 }
